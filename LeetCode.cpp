@@ -622,9 +622,11 @@ int main() {
     cout << "13. Rverse Linked List\n";
     cout << "14. Linked List Cycle\n";
     cout << "15. Remove Linked List Elements\n";
-    cout << "16.  Permutation Difference between Two Strings\n";
+    cout << "16. Permutation Difference between Two Strings\n";
     cout << "17. Number Of Good Pairs\n";
     cout << "18. Jewels and Stones\n";
+    cout << "19. How Many Numbers Are Smaller Than the Current Number\n";
+    cout << "20. Two Sum\n";
  
     cout << "Enter your choice: ";
     cin >> choice;
