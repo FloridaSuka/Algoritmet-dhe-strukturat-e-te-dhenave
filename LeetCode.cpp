@@ -556,7 +556,7 @@ ListNode* removeElements(ListNode* head, int val) {
         }
         return result; // Kthe indekset e dy numrave që shtohen në target
     }
-//Kompleksiteti khore dhe hapsinor O(n)
+//Kompleksiteti kohore dhe hapsinor O(n)
 
  };
 
@@ -849,7 +849,6 @@ int main() {
      break;
     }
      case 13: {
-    // Krijon listën e lidhur
     vector<int> values;
     int numValues, val;
     cout << "Enter number of elements in linked list: ";
@@ -867,7 +866,6 @@ int main() {
     }
     cout << endl;
 
-    // Thërret funksionin për të kthyer listën
     ListNode* reversedHead = solution.reverseList(head);
     cout << "Reversed list: ";
     for (ListNode* curr = reversedHead; curr != nullptr; curr = curr->next) {
@@ -875,7 +873,6 @@ int main() {
     }
     cout << endl;
 
-    // Çliro memorien e listës së lidhur
     while (reversedHead != nullptr) {
         ListNode* temp = reversedHead;
         reversedHead = reversedHead->next;
@@ -983,11 +980,8 @@ int main() {
     for (int i = 0; i < size; ++i) {
         cin >> nums[i];
     }
-
-    // Thirr metoden numIdenticalPairs
     int result = solution.numIdenticalPairs(nums);
 
-    // Shfaq rezultatin
     cout << "Number Of Good Pairs: " << result << endl;
 
       break;
