@@ -1030,6 +1030,13 @@ int main() {
     cout << "]" << endl;
       break;
      }
+     case 20:{
+      vector<int> nums = {2, 7, 11, 15}; 
+    int target = 9;
+    vector<int> indices = solution.twoSum(nums, target);
+    cout << "Indekset: [" << indices[0] << ", " << indices[1] << "]" << endl;
+      break;
+     }
 
         default:
             cout << "Invalid choice." << endl;
