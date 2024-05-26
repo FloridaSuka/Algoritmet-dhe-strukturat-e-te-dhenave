@@ -518,6 +518,25 @@ ListNode* removeElements(ListNode* head, int val) {
     }
 //Kompleksiteti kohore dhe hapsinor
 //O(n)
+
+//4)How Many Numbers Are Smaller Than Current Number
+    vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> result(n, 0);
+        vector<int> sortNums = nums;
+        sort(sortNums.begin(), sortNums.end());
+
+        for (int i = 0; i < n; ++i) {
+            int count = lower_bound(sortNums.begin(), sortNums.end(), nums[i]) - sortNums.begin();
+            result[i] = count;
+        }
+
+        return result;
+    }
+//Komplleksiteti kohore 
+//O(nlogn)
+//Kompleksiteti hapsinor
+//O(n)
  };
 
 void printInOrder(TreeNode* node) {
