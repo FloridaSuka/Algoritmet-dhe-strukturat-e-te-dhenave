@@ -2,9 +2,10 @@
 #include <stack>
 #include <queue>
 #include <unordered_set>
+#include <algorithm>
+#include <unordered_map>
 #include <vector>
 #include <string>
-#include <unordered_map>
 using namespace std;
 
 // Definition for a binary tree node.
@@ -980,6 +981,31 @@ int main() {
     cout<<endl;
     int rezultati = solution.numJewelsInStones(jewels1, stones1);
     cout<<"Number of jewels "<<rezultati<<endl;
+      break;
+     }
+     case 19:{
+        int n;
+    vector<int> nums1(n);
+    int num1;
+    cout<<"Length vector: ";
+    cin>>n;
+
+    cout << "Enter values:" << endl;
+    for (int i = 0; i < n; ++i) {
+        cin >> num1;
+        nums1.push_back(num1);
+    }
+
+    vector<int> result1 = solution.smallerNumbersThanCurrent(nums1);
+
+    cout << "Output: [";
+    for (int i = 0; i < result1.size(); ++i) {
+        cout << result1[i];
+        if (i < result1.size() - 1) {
+            cout << ", ";
+        }
+    }
+    cout << "]" << endl;
       break;
      }
 
